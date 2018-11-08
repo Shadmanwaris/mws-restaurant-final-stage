@@ -158,6 +158,7 @@ const fillRestaurantsHTML = (restaurants = self.restaurants) => {
     const mapDiv = document.getElementById("map");
     const mapImg = document.createElement("img");
     mapImg.id = "mapImg";
+    mapImg.alt = "google map";
     mapImg.onclick = e => switchToLiveMap();
     mapImg.src = mapURL;
     mapDiv.append(mapImg);

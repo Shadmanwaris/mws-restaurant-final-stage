@@ -1,5 +1,5 @@
 {
-  "short_name": "RestaurantReviews",
+  "short_name": "Restaurant",
   "name": "Udacity Restaurant Reviews",
   "icons": [
     { "src": "icons/icon-1x.png", "type": "image/png", "sizes": "48x48" },
@@ -7,7 +7,7 @@
     { "src": "icons/icon-3x.png", "type": "image/png", "sizes": "192x192" },
     { "src": "icons/icon-4x.png", "type": "image/png", "sizes": "512x512" }
   ],
-  "start_url": "index.html",
+  "start_url": "/index.html",
   "background_color": "#262932",
   "theme_color": "#262932",
   "display": "fullscreen"
