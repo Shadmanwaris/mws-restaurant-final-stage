@@ -1,0 +1,236 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,
+td,
+th,
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+
+ul,
+li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  color: #333;
+}
+a {
+  color: orange;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #000;
+  text-decoration: none;
+}
+a img {
+  border: none 0px #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 0 20px;
+  color: #000;
+}
+h3 {
+  color: #000;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 0;
+  margin: 15px 10px;
+  text-transform: uppercase;
+}
+
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+#main-nav {
+background-color: #3397DB;
+}
+#maincontent {
+  background-color: #f3f3f3;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#footer {
+  background-color: #3397DB;
+  color: #fff;
+  font-size: 8pt;
+  letter-spacing: 1px;
+  padding: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#restaurants-list li .favorite-icon button, #maincontent .favorite-icon button {
+  max-width: 25px;
+  max-height: 25px;
+  position: absolute;
+  top: 4px;
+  right: 20px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+  margin: 0;
+  padding: 0;
+  color: transparent;
+  font-size: 2px;
+}
+
+#maincontent .favorite-icon button {
+  top: 20px;
+}
+#restaurant-wrapper {
+  display: flex;
+}
+@media only screen and (max-width: 768px) {
+	#restaurant-wrapper {
+		display: block;
+	}
+	#restaurant-address-and-hours{
+		padding: 0;
+		margin: 0;
+	}
+}
+/* ====================== Map ====================== */
+#map {
+  height: 400px;
+  width: 100%;
+  background-color: #ccc;
+  text-align: center;
+}
+#mapImg {
+  cursor: pointer;
+  width:100% !important;
+  height:100% !important;
+  top:0px !important;
+  left:0px !important;
+
+}
+.map-aria-description {
+  display: none;
+}
+.inside #map-container {
+  background: blue none repeat scroll 0 0;
+  height: 200px;
+  /*position: fixed;
+  right: 0;
+  top: 80px;
+  width: 50%;*/
+}
+.inside #map {
+  background-color: #ccc;
+  height: 100%;
+  width: 100%;
+}
+
+/* Nav */
+nav {
+  width: 100%;
+  /*height: 80px;*/
+  background-color: #3397DB;
+  text-align: center;
+}
+nav h1 {
+  margin: auto;
+  text-align: center;
+  padding: 5px 20px;
+}
+nav h1 a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+nav {
+  text-align: left;
+}
+
+/*----------------------*/
+/* Dialog styles        */
+/*----------------------*/
+
+#review-entry {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  padding-bottom: 65px;
+}
+
+#review-entry label span {
+  display: block;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#review-entry label input {
+  width: calc(100% - 20px);
+  box-sizing: border-box;
+  font-size: 18px;
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#review-entry label select {
+  font-size: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#review-entry label textarea {
+  width: calc(100% - 20px);
+  box-sizing: border-box;
+  font-size: 18px;
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#review-entry div {
+  margin-bottom: 15px;
+}
+
+#review-entry button {
+  background-color: #3397DB;
+  border-bottom: 3px solid #eee;
+  color: #f0f0f0;
+  display: inline-block;
+  font-size: 14px;
+  margin: 15px 0 0;
+  padding: 8px 30px 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
